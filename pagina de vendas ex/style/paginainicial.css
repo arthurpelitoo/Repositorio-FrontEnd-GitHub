@@ -185,12 +185,10 @@ input#auto-complete.ui-autocomplete-input{
 }
 
 .conteudocabecalhodireito{
+    display: block;
     justify-content: center;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 50px;
     width: 600px;
+    height: 250px;
     border-radius: 8px;
     border: 3px solid #ff0000;
     box-shadow: 4px 4px rgb(26, 187, 193);
@@ -207,7 +205,7 @@ input#auto-complete.ui-autocomplete-input{
 
 .listaitens{
     vertical-align: middle;
-    display: inline-block;
+    display: block;
 }
 
 .seleçãoplataformaeafins .listaitens li:hover {
@@ -231,11 +229,6 @@ input#auto-complete.ui-autocomplete-input{
     display: inline-block;
 }
 
-.itempartebaixo{
-    vertical-align: middle;
-    display: inline-block;
-}
-
 .seleçãoplataformaeafins ul {
     margin: 0;
 }
@@ -253,6 +246,8 @@ ul, ol {
 
 li.categoriaPlatPlaystation.PRINC {
     background: rgb(0, 52, 120);
+    display: block;
+    
 }
 
 li.categoriaPlatPlaystation.PRINC strong{
@@ -476,9 +471,9 @@ a {
 }
 
 /* Adicione um seletor de hover personalizado para cada item se desejar */
-#listagemProd li:hover {
+/* #listagemProd li:hover { */
     /* Estilos de destaque ao passar o mouse, se necessário */
-}
+/* } */
 
 .info-produto {
     text-align: center;
