@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Página Geradora de Tabuada</p>
+        </div>
+
+
+        <div class="Geradores">
+            <div class="lumen">
+                <div class="lumen-title">
+                    <p>Escreva aí o numero da Tabuada</p>
+                </div>
+                <div class="OneNum-bar">
+                    <input id="numerTab" type="text" placeholder="Escreva o numero">
+                </div>
+
+                <div class="lumen-title2">
+                    <p>Diga até onde pode ir a Tabuada</p>
+                </div>
+                <div class="TwoNum-bar">
+                    <input id="numerTabEnd" type="text" placeholder="Até onde irá a tabuada">
+                </div>
+
+                    <div class="botaozin">
+                        <button id= "newResult" onclick="addResult()"> <p>Gerar Tabuada</p> </button>
+                    </div>
+
+                    <!-- O RESULTADO SAI AQUI -->
+                    <div class="ResultItens">
+                        <ul id="ResultList"> 
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    
+    
+        <!-- EM CASO DE ERRO (MODAL) -->
+        <div id="modal-container" class="modal-container" style="display: none; opacity: 0;"></div>
+        <div id="modal-overlay" class="modal-overlay" style="display: none; opacity: 0;"></div>
+
+    </div>
+    
+    <!-- script -->
+    <script>
+        document.getElementById("modal-container").innerHTML =
+        `
+        <div class="modal">
+            <div class="title">
+                <h3>Erro em efetuar a Tabuada</h3>
+            </div>
+            <div class="message">
+                <p>Não dá para se fazer uma operação sem o numerador!</p>
+            </div>
+            <div class="button">
+                <button onclick="closeModal()">Ok</button>
+            </div>
+            <div></div>
+        </div>
+        `;
+
+        closeModal();
+
+
+            function addResult(){
+                const numerador = (document.getElementById("numerTab").value);
+                const quanti = (document.getElementById("numerTabEnd").value);
+                var tabuada = document.getElementById('ResultList');
+                var tabela = " ";
+
+                if(numerador != "" || quanti != ""){
+
+                    for(var i = 1; i<=quanti; i++){
+                    tabela += "<li>" + numerador + " x " + i + " = " + (numerador * i) + "</li>";
+                    }
+                    
+                } else{
+                    openModal();
+                }
+
+                tabuada.innerHTML = tabela;
+            }
+
+            function openModal(){
+                document.getElementById("modal-container").style.display = "flex";
+                document.getElementById("modal-overlay").style.display = "flex";
+                document.getElementById("modal-container").style.opacity = "1";
+                document.getElementById("modal-overlay").style.opacity = "1";
+            }
+
+            function closeModal(){
+                document.getElementById("modal-container").style.display = "none";
+                document.getElementById("modal-overlay").style.display = "none";
+                document.getElementById("modal-container").style.opacity = "0";
+                document.getElementById("modal-overlay").style.opacity = "0";
+            }
+
+            document.getElementById('newResult').addEventListener('click', function(){
+                var elementoanim = document.getElementById('ResultList');
+                elementoanim.classList.add('animat');
+
+                            setTimeout(function() {
+                elemento.classList.remove('anima');}, 0); // Defina o mesmo tempo da duração da animação
+            });
+
+    </script>
+</body>
+</html>

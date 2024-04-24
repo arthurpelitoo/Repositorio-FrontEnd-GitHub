@@ -1,0 +1,33 @@
+body{
+    color:white;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main section header img{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+@media (max-width: 300px){
+    ul{
+        display: contents
+    }
+}

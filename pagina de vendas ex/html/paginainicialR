@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NG - Pag. Inicial</title>
+        <link rel="stylesheet" href="../style/paginainicial.css">
+    </head>
+            <body>
+                
+                      <conteudoprincipal>
+                            <div id="cabecalho">
+                                <div id="conteudocabecalho">
+                                    <div id="logobarrapesquisacontacarrinho">
+                                        <!-- ::before -->
+                                        <div class="logo">
+                                            <h1 class="logo cor-secundaria">
+                                                <a href=".." title="NightGames - Into your Dreams!">
+                                                    <img src="..." alt="NightGames - Into your Dreams!">
+                                                </a>
+                                            </h1>
+                                        </div>
+                                        <div class="barrapesquisacontacarrinho">
+                                            <!-- ::before -->
+                                            <div class="minhaconta">
+                                                <ul class="listadeopçoesconta">
+                                                    <li>
+                                                        <i class="lista-icones fundo-principal"></i>
+                                                        <a href="..." class="cor-secundaria">Meus Pedidos</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="usuario-icones fundo-principal"></i>
+                                                        <a href="..." class="cor-secundaria">Minha Conta</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- ::after -->
+                                        </div>
+                                        <div class=""
+                                    </div>
+                                </div>
+                            </div>
+                      </conteudoprincipal>
+
+            </body>
+</html>

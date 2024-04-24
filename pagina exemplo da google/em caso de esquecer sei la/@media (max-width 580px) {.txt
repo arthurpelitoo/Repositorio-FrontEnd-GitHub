@@ -1,0 +1,142 @@
+@media (max-width: 580px) {
+
+    body{
+        min-width: 1125px;
+    }
+
+    main img {
+        padding: 20px; /* Aumenta o preenchimento da imagem */
+    }
+
+    main .SearchBox {
+        padding: 20px; /* Aumenta o preenchimento da caixa de pesquisa */
+    }
+
+    main .SearchBox .input-box span {
+        font-size: 16px !important; /* Reduz o tamanho do texto da dica */
+        padding: 5px 1px !important;
+        bottom: 642px;
+    }
+
+    .fazol.seila{
+        padding: 160px;
+    }
+
+    .SearchBox .input-box input,
+    .SearchBox .input-box textarea{
+        width: 95%;
+        padding: 10px 10px 10px 10px;
+        /* padding-left: 50px; */
+        padding-right: 25px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: outset aqua;
+        border-bottom: 2px outset aqua;
+        border-radius: 25px;
+        outline: none;
+        resize: none;
+        background: url(/res/magnifying-glass-solid.svg) no-repeat right;
+        background-size: 20px 20px;
+        background-color:khaki;
+        /* background-position: right; */
+
+    }
+}
+
+@media (max-width: 455px) {
+
+    body{
+        min-width: 1125px;
+    }
+
+    main img {
+        padding: 20px; /* Aumenta o preenchimento da imagem */
+    }
+
+    main .SearchBox {
+        padding: 20px; /* Aumenta o preenchimento da caixa de pesquisa */
+    }
+
+    main .SearchBox .input-box span {
+        font-size: 16px !important; /* Reduz o tamanho do texto da dica */
+        padding: 5px 1px !important;
+        bottom: 62px;
+        left: 30px;
+    }
+
+    .fazol.seila{
+        padding: 160px;
+    }
+
+    .SearchBox .input-box input,
+    .SearchBox .input-box textarea{
+        width: 110%;
+        padding: 10px 10px 10px 10px;
+        /* padding-left: 50px; */
+        padding-right: 25px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: outset aqua;
+        border-bottom: 2px outset aqua;
+        border-radius: 25px;
+        outline: none;
+        resize: none;
+        background: url(/res/magnifying-glass-solid.svg) no-repeat right;
+        background-size: 20px 20px;
+        background-color:khaki;
+        /* background-position: right; */
+
+    }
+}
+
+@media (max-width: 380px) {
+
+    body{
+        min-width: 1125px;
+    }
+    
+    main img {
+        padding: 20px; /* Aumenta o preenchimento da imagem */
+    }
+
+    main .SearchBox {
+        padding: 20px; /* Aumenta o preenchimento da caixa de pesquisa */
+    }
+
+    main .SearchBox .input-box span {
+        font-size: 10px !important; /* Reduz o tamanho do texto da dica */
+        line-height: 1.0 !important;
+        padding: 12px !important;
+    }
+
+    .SearchBox .input-box input,
+    .SearchBox .input-box textarea{
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: outset aqua;
+        border-bottom: 2px outset aqua;
+        outline: none;
+        resize: none;
+
+    }
+
+    .fazol.seila{
+        padding: 150px;
+    }
+
+    .SearchBox .input-box input,
+    .SearchBox .input-box textarea{
+    width: 90%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: outset aqua;
+    border-bottom: 2px outset aqua;
+    border-radius: 25px;
+    outline: none;
+    resize: none;
+
+    }
+}

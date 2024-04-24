@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px TARGET_MEDIA, 0 0 2px TARGET_MEDIA;
+    background: {background_color};
+    font-family: font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+  	-webkit-mask-image: -webkit-gradient(linear, left 16%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 900px;
+    table-layout: fixed;
+}
+
+#log>div {
+    display: block;
+  	margin-bottom: 20px;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message {
+    vertical-align: top;
+    display: block;
+    padding-bottom: 0.1em;
+}
+#log .meta {
+    max-width: 500px;
+  	vertical-align: top;
+    display: inline-block;
+    padding-bottom: 0.1em;
+  	text-align: left;
+    padding-right: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:  dodgerblue;
+    font-weight: bolder;
+    padding: 8px 10px;
+    color: #ffffff;
+    border-top-right-radius: 1px;
+  	border-top-left-radius: 1px;
+  	border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+   border: 5px solid hsl(207, 100%, 66%);
+}
+
+#log .message {
+    word-wrap: break-word;
+    width: 65%;
+  	font-weight: 500;
+    background: blue;
+    color: #fff;
+    padding: 20px 20px;
+    border-top-right-radius: 1px;
+  	border-top-left-radius: 1px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 2px;
+    border: 8px solid hsl(207, 100%, 66%);
+  box-shadow: 8px 6px aqua;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0px;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+    margin-left: 0;
+  	color: #fff!important;
+}

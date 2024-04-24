@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1125px;
+}
+
+header {
+    background-color: rgb(44, 133, 155);
+    padding: 20px;
+    text-align: right;
+}
+
+header nav ul {
+    list-style-type: none; 
+}
+
+header nav ul li {
+    display: inline; 
+}
+
+header nav ul li a {
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none; 
+    color: white; 
+    padding: 10px; 
+    background-color: blue;
+    border: 8px thick hsl(207, 100%, 66%);
+    box-shadow: 8px 6px aqua;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(3, 184, 184); /* Altera a cor de fundo no hover */
+    color: red; /* Altera a cor do texto no hover */
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+
+main .SearchBox{
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+
+main .SearchBox form .input-box{
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.SearchBox .input-box input,
+.SearchBox .input-box textarea{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    height: 40px;
+    /* padding-left: 50px; */
+    padding-right: 25px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: outset aqua;
+    border-bottom: 2px outset aqua;
+    border-radius: 25px;
+    outline: none;
+    resize: none;
+    background: url(/res/magnifying-glass-solid.svg) no-repeat right;
+    background-size: 20px 20px;
+    background-color:khaki;
+    /* background-position: right; */
+
+}
+
+.SearchBox .input-boques input[type="submit"] {
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(1, 53, 53);
+    background-color: aqua;
+    border-radius: 5px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.SearchBox .input-box span{
+    position: fixed;
+    padding: 5px 1px;
+    font-size: 20px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.SearchBox .input-box input:focus ~ span,
+.SearchBox .input-box input:valid ~ span
+.SearchBox .input-box textarea:focus ~ span,
+.SearchBox .input-box textarea:valid ~ span{
+     color: #e91e63;
+     font-size: 18px;
+     transform: translateY(-60px);
+}
+
+.SearchBox .input-boques input[type="submit"]:hover{
+    background-color: rgb(2, 202, 202);
+    color:rgb(243, 46, 46);
+    transition: 750ms;
+}
+
+.input-box span {
+    color: rgb(253, 60, 60); 
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.fazol {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.seila {
+    flex-grow: 1;
+}
+
+.fazol.seila{
+    padding: 171px;
+}
+
+.icon {
+    position: fixed;
+    text-align: center;
+    top: 29.6%;
+    right: 500px;
+    
+    transform: translateY(-50%);
+    color: #888; /* Cor do ícone */
+    pointer-events: none; /* Evita que o ícone seja clicável */
+}
+
+.icon i {
+    font-size: 16px; /* Tamanho do ícone */
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+footer p{
+    color: rgb(6, 53, 139);
+    font-size: 24px;
+}
+
+footer p a{
+    color: rgb(61, 94, 156);
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 450px) {
+
+    body{
+        min-width: 750px;
+    }
+
+    main img {
+        padding: 20px; /* Aumenta o preenchimento da imagem */
+    }
+
+    main .SearchBox {
+        padding: 20px; /* Aumenta o preenchimento da caixa de pesquisa */
+    }
+
+    main .SearchBox .input-box span {
+        font-size: 16px !important; /* Reduz o tamanho do texto da dica */
+        padding: 5px 1px !important;
+        bottom: 642px;
+    }
+
+    .fazol.seila{
+        padding: 160px;
+    }
+
+    .SearchBox .input-box input,
+    .SearchBox .input-box textarea{
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        /* padding-left: 50px; */
+        padding-right: 25px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: outset aqua;
+        border-bottom: 2px outset aqua;
+        border-radius: 25px;
+        outline: none;
+        resize: none;
+        background: url(/res/magnifying-glass-solid.svg) no-repeat right;
+        background-size: 20px 20px;
+        background-color:khaki;
+        /* background-position: right; */
+
+    }
+}
+

@@ -1,0 +1,43 @@
+body{
+    color:white;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.center{
+    text-align: center;
+    background-color: red;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    padding: null;
+}
+
+@media (max-width: 300px){
+    ul{
+        display: contents
+    }
+}

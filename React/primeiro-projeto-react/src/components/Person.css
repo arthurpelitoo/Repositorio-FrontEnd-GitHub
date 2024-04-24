@@ -1,0 +1,25 @@
+
+.CriaItens{
+    background-color: #57F2F2;
+    color: red; 
+    border: 2px ridge white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 150px;
+    padding-left: 150px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.ConfirmaItens{
+    display: flex;
+    position: absolute;
+    left: 516px;
+    top: 10px;
+    padding: 0;
+        
+}

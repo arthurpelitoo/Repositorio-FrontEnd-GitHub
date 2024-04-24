@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Aqui vamos adicionar o cabeçalho da página -->
+    </header>
+    <main>
+        <!-- Aqui vamos adicionar o conteúdo principal da página -->
+    </main>
+    <footer>
+        <!-- Aqui vamos adicionar o rodapé da página -->
+    </footer>
+</body>
+</html>

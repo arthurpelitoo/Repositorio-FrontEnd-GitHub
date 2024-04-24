@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: #FFD700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    
+}
+
+.title p{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FF6B6B;
+    background-color: #ffb62f;
+    font-size: 36px;
+    border-style: double;
+    border-color: #FFA500;
+    box-shadow: 4px 6px #DAA520;
+    border-radius: 6px;
+    
+}
+
+.Geradores{
+    background-color: #FFA500;
+    padding: 50px;
+    border-radius: 8px 6px;
+}
+
+.lumen{
+    background-color: #ffb62f;
+}
+
+.lumen-title p{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FF6B6B;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.OneNum-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.OneNum-bar #numerTab{
+    background-color: #800080;
+    color: #FFA500;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    box-shadow: 4px 6px #DAA520;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.OneNum-bar #numerTab::placeholder{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #FFA500;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.lumen-title2 p{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FF6B6B;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.TwoNum-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.TwoNum-bar #numerTabEnd{
+    background-color: #800080;
+    color: #FFA500;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    display: flex;
+    box-shadow: 4px 6px #DAA520;
+    border-radius: 6px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.TwoNum-bar #numerTabEnd::placeholder{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #FFA500;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.botaozin{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#newResult{ 
+    background-color: #ffbd41;
+    
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    border: #FFA500;
+    border-radius: 6px;
+    border-style: double;
+    box-shadow: 4px 6px #DAA520;
+} 
+
+#newResult p{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #800080;
+    
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.ResultItens{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#ResultList{
+
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    color: #FF6B6B;
+    padding: 40px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+@keyframes moveDOWN{
+    from {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(10px);
+        padding-top: 10px;
+        opacity: 100;
+    }
+}
+
+#ResultList{
+    animation: moveDOWN 2s ease-in-out;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.modal-container .modal{
+    background-color: #FFA500;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 3;
+    position: fixed;
+}
+
+.modal-container .modal .title{
+    display: flex;
+    width: 100%;
+    background-color: #800080;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.modal-container .modal .title h3{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FFA500;
+}
+
+.modal-container .modal .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-container .modal .message p{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #800080;
+}
+
+.modal-container .modal button{
+    width: 100%;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+}
+
+.modal-container .modal button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FF6B6B;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-container .modal button:hover{
+    background-color: #800080;
+    color: #FFA500;
+    transition: 0.2s;
+    box-shadow: 2px 6px #DAA520;
+    border-radius: 8px;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
