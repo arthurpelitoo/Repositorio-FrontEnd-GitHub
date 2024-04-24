@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+
+body{
+    background-color: #FFD700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    
+}
+
+.title h1{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FF6B6B;
+}
+
+.to-do-list-input #newTask{
+    background-color: #800080;
+    color: #FFA500;
+}
+
+.to-do-list-input #newTask::placeholder{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #FFA500;
+}
+
+.to-do-list-input{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.to-do-list-input input{
+    width: 50%;
+    height: 70px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    text-indent: 40px;
+    font-size: 18px;
+    outline: none;
+}
+
+.to-do-list-input button{
+    width: 100px;
+    height: 70px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: none;
+    font-size: 36px;
+    cursor: pointer; 
+    background-color: #FF6B6B;
+}
+
+.to-do-list-input button p{
+    /* border-radius: 100px; */
+    width: 95px;
+    height: 60px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list-input button:hover p{
+    background-color: #b900b9;
+    color: #FFA500;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 100px;
+    height: 70px;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+.to-do-list-items{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.to-do-list-items input{
+    width: 80%;
+    height: 70px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    text-indent: 40px;
+    font-size: 18px;
+    outline: none;
+}
+
+.to-do-list-items .ck-button{
+    width: 70px;
+    height: 70px;
+    border: none;
+    font-size: 36px;
+    background-color: #FF6B6B;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list-items .ck-button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    background-color: #800080;
+    color: #FFA500;
+}
+
+.to-do-list-items .del-button{
+    width: 70px;
+    height: 70px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: none;
+    font-size: 36px;
+    background-color: #FF6B6B;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-list-items .del-button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    background-color: #800080;
+    color: #FFA500;
+}
+
+.to-do-list{
+    width: 100%;
+}
+
+.to-do-list-items ul{
+    width: 60%;
+}
+
+.new-item{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.new-item .text{
+   width: 500px;
+   display: flex;
+   justify-content: center; 
+}
+
+.new-item .text input{
+    width: 100%;
+}
+
+.new-item .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-item .button button{
+    color: black;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.modal-container .modal{
+    background-color: #FFA500;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 3;
+    position: fixed;
+}
+
+.modal-container .modal .title{
+    display: flex;
+    width: 100%;
+    background-color: #800080;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.modal-container .modal .title h3{
+    font-family: 'Pixelify Sans',Arial, Helvetica, sans-serif;
+    color: #FFA500;
+}
+
+.modal-container .modal .message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-container .modal .message p{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    color: #800080;
+}
+
+.modal-container .modal button{
+    width: 100%;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+}
+
+.modal-container .modal button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FF6B6B;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-container .modal button:hover{
+    background-color: #800080;
+    color: white;
+    transition: 0.2s;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}

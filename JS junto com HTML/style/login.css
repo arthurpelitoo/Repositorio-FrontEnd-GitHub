@@ -1,0 +1,81 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form input#user{
+    max-width: 500px;
+    margin-top: 40px;
+    margin-left: 10px;
+  	vertical-align: top;
+    display: inline-block;
+    padding-bottom: 0.1em;
+  	text-align: left;
+    padding-right: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:  dodgerblue;
+    font-weight: bolder;
+    padding: 8px 10px;
+    color: #ffffff;
+    border-top-right-radius: 1px;
+  	border-top-left-radius: 1px;
+  	border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 5px solid hsl(207, 100%, 66%);
+    border-radius: 8px;
+    box-shadow: 8px 6px aqua;
+}
+
+form input#password{
+    max-width: 500px;
+    margin-top: 40px;
+    margin-left: 10px;
+  	vertical-align: top;
+    display: inline-block;
+    padding-bottom: 0.1em;
+  	text-align: left;
+    padding-right: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:  dodgerblue;
+    font-weight: bolder;
+    padding: 8px 10px;
+    color: #ffffff;
+    border-top-right-radius: 1px;
+  	border-top-left-radius: 1px;
+  	border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 5px solid hsl(207, 100%, 66%);
+    border-radius: 8px;
+    box-shadow: 8px 6px aqua;
+}
+
+form button#confirm{
+    word-wrap: break-word;
+  	font-weight: 500;
+    margin-top: 40px;
+    margin-left: 200px;
+    background: blue;
+    color: #fff;
+    padding: 5px;
+    border-top-right-radius: 1px;
+  	border-top-left-radius: 1px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 2px;
+    border: 8px solid hsl(207, 100%, 66%);
+    border-radius: 8px;
+    box-shadow: 8px 6px aqua;
+}
+
+body{
+    background-color: brown;
+}
+
+cabeçalhocontent{
+    
+}

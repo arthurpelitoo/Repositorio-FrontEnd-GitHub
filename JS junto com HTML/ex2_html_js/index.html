@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="new-text" type="text" placeholder="Novo texto">
+    <button onclick="changeText()">Trocar Texto</button>
+
+    <h1>a</h1>
+    <h1>b</h1>
+    <h1>c</h1>
+
+    <script>
+        const newTextField = document.getElementById("new-text");
+        const h1All = document.querySelectorAll("h1");
+
+        function changeText(){
+            h1All.forEach((h1) => {
+                h1.textContent = newTextField.value;
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="selector" type="text" placeholder="Digite a tag html"> 
+    <br>
+    <input id="border" type="text" placeholder="digite o tipo de borda (se nao quiser escreva none)">
+    <br>
+    <input id="color" type="text" placeholder="digite a nova cor da borda e da tag">
+    <br>
+    <br>
+    <select id="drop-down">
+        <option value="fontColor">Cor da fonte</option>
+        <option value="bgColor">Cor de fundo</option>
+        <option value="borderColor">Cor de borda</option>
+        <option value="boxShadow">Sombra da caixa</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="getElement()">Mudar de cor</button>
+
+    <h1>a</h1>
+    <h1>b</h1>
+    <h1>c</h1>
+
+    <h2>aa</h2>
+    <h2>bb</h2>
+    <h2>cc</h2>
+
+    <script>
+        const selectorField = document.getElementById("selector"); //referenciando as inputs
+        const borderField = document.getElementById("border");
+        const colorField = document.getElementById("color");
+        const boxShadowField = document.getElementById("box-shadow");
+
+        function getElement(){
+            const elements = document.querySelectorAll(selectorField.value);
+
+
+            const dropDown = document.getElementById("drop-down");
+
+            if(elements.length > 0){
+                elements.forEach((element) => {
+                    if(dropDown.value === "fontColor"){
+                        element.style.color = colorField.value;
+                    }else if(dropDown.value === "bgColor"){
+                        element.style.backgroundColor = colorField.value;
+                    }else if(dropDown.value === "borderColor"){
+                        element.style.border = borderField.value;
+                    }else if(dropDown.value === "boxShadow"){
+                        element.style.boxShadow = colorField.value;
+                    }
+                })
+            }else{
+                alert("A pagina nao possui nenhum " + selectorField.value)
+            }
+        }
+
+    </script>
+</body>
+</html>
