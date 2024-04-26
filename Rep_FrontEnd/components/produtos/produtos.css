@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.listagem{
+    display: block;
+    justify-content: center;
+    margin-left: auto; /* Define a margem esquerda como automática para centralizar a imagem horizontalmente */
+    margin-right: auto; /* Define a margem direita como automática para centralizar a imagem horizontalmente */
+}
+
+#listagemProd ul  {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
+    overflow-x: auto;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    list-style-type: none; /* Remove os marcadores de lista */
+}
+
+#listagemProd li {
+    flex: 2 2 auto; /* Faz com que os itens da lista não cresçam nem encolham */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    width: 350px calc(25% - 40px); /* Define a largura de cada item (25% do contêiner) com espaço entre eles */
+    margin-left: 40px; /* Adiciona espaçamento entre os itens */
+    margin-right: 40px;
+}
+
+/* Adicione um seletor de hover personalizado para cada item se desejar */
+/* #listagemProd li:hover { */
+    /* Estilos de destaque ao passar o mouse, se necessário */
+/* } */
+
+.separação{
+    justify-content: center;
+}
+
+.produto {
+    border: 5px solid #ff0000;
+    border-radius: 8px;
+    background:#00ffee;
+    box-shadow: 8px 2px 5px rgb(26, 187, 193);
+}
+
+
+.precoproduto span{
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.precoproduto .precopromo.titulo{
+    color: crimson;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.info-produto {
+    text-align: center;
+    top: 15px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.imagemproduto img {
+    max-width: 175px;
+    display: block;
+    margin-left: auto; /* Define a margem esquerda como automática para centralizar a imagem horizontalmente */
+    margin-right: auto; /* Define a margem direita como automática para centralizar a imagem horizontalmente */
+}
+
+.parcela strong{
+    color: rgb(174, 162, 98);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.descontopixvista strong{
+    color: rgb(174, 162, 98);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}

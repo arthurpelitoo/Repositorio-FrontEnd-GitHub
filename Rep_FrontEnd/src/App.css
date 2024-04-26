@@ -1,0 +1,600 @@
+/* Reset CSS básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 1125px;
+    background: seagreen;
+}
+
+header{
+    background-color: rgb(127, 240, 255);
+}
+
+main{
+    background-color: rgb(159, 244, 255) ;
+}
+
+/* Estilos para o cabeçalho */
+.cabecalho {
+    background-color: #00ffff; /* Cor de fundo */
+    background-position: top center;
+    background-repeat: repeat;
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Flexbox para organizar os elementos */
+    justify-content: space-between; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.conteudocabecalho{
+    max-width: 980px;
+}
+
+.conteudocabecalho{
+    padding: 10px 20px;
+}
+
+.conteudocabecalho{
+    max-width: 1140px;
+    
+    padding: 0 20px;
+}
+
+.conteudocabecalho .logoemsi {
+     width: 23.404255319148934%;
+     width: 23.351063829787233%;
+}
+
+.conteudocabecalho [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.127659574468085%;
+    margin-left: 2.074468085106383%;
+}
+
+.logoemsi {
+    width: 220px;
+}
+
+.logoemsi img{
+    width: 300px;
+    height: 40%;
+}
+
+button.botao.botaobusca.iconepesquisa{
+    background-color: aqua;
+    box-shadow: 4px 4px rgb(26, 187, 193);
+    border: 3px solid #ff0000;
+    border-radius: 6px;
+}
+
+
+#auto-complete::placeholder {
+    color: blue; /* Cor desejada para o placeholder */
+}
+
+input#auto-complete.ui-autocomplete-input{
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+    height: 36.5px;
+    width: 80%;
+    background: #00ffee;
+    border: 3px solid #ff0000;
+    outline: none;
+    box-shadow: 4px 4px rgb(26, 187, 193);
+    color: blue;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: medium;
+    margin-top: -5px;
+}
+
+/* Estilos para o contêiner principal */
+.conteudocabecalho {
+    
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilos para a barra de pesquisa */
+.espaçopesquisa .pesquisaemsi form#form-busca  {
+    padding: 50;
+    margin-right: 20px; /* Margem à direita para separar os elementos */
+}
+
+
+
+/* Estilos para a sessão Minha Conta */
+.minhaconta {
+    position: relative; /* Permite posicionar o submenu */
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+    border: 3px solid #ff0000;
+    box-shadow: 4px 4px rgb(26, 187, 193);
+    background: #00ffee;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.minhaconta a{
+    color: blue;
+}
+
+.espaçoconta {
+    width: 100px;
+}
+
+/* Estilos para a lista de opções da sessão Minha Conta */
+.barraconta {
+    display: none; /* Oculta a lista por padrão */
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner pai */
+    margin-bottom: 20; 
+    margin-left: 35;
+    margin-right: 35;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgb(26, 187, 193);
+    background-color: #00ffee; /* Cor de fundo */
+    
+}
+
+/* Estilos para o link Minha Conta */
+.minhaconta:hover .barraconta {
+    display: block; /* Exibe a lista quando o link é hover */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.separa_os_dois_doidos{
+    padding-bottom: 10px;
+}
+
+.separa_os_dois_doidos2{
+    padding-bottom: 10px;
+}
+
+.separa_os_dois_doidos3{
+    padding-bottom: 10px;
+}
+
+.carrinhocompras span{
+    color: blue;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.carrinhocompras img{
+    max-width: 5%;
+}
+
+.conteudocabecalhodireito{
+    display: block;
+    justify-content: center;
+    width: 600px;
+    height: 250px;
+    border-radius: 8px;
+    border: 3px solid #ff0000;
+    box-shadow: 4px 4px rgb(26, 187, 193);
+    background: #00ffee;
+}
+
+.tituloplatafor span {
+    display: inline-block; /* Permite ajustar a altura verticalmente */
+    vertical-align: middle; /* Centraliza verticalmente */
+    color: blue;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+
+.listaitens{
+    vertical-align: middle;
+    display: block;
+}
+
+.seleçãoplataformaeafins .listaitens li:hover {
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+}
+
+.cabecalho .seleçãoplataformaeafins {
+    text-align: center;
+    z-index: 9;
+    margin: 0px;
+    background: none;
+}
+.seleçãoplataformaeafins {
+    background-color: rgba(0,0,0,0.09);
+    margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.seleçãoplataformaeafins ul {
+    margin: 0;
+}
+ul, li {
+    list-style-type: none;
+}
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+
+.seleçãoplataformaeafins .listaitens>li:first-child {
+    border-left: none !important;
+}
+
+li.categoriaPlatPlaystation.PRINC {
+    background: rgb(0, 52, 120);
+    display: block;
+    
+}
+
+li.categoriaPlatPlaystation.PRINC strong{
+    color: #00ffee;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.categoriaPlatPlaystationParteBaixo{
+    display: none;
+}
+
+.categoriaPlatPlaystation.PRINC:hover .categoriaPlatPlaystationParteBaixo{
+    display: block;
+    background: rgb(0, 52, 120);
+}
+.categoriaPlatPlaystationParteBaixo{
+    position: relative;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+    justify-content: middle;
+}
+
+.categoriaPlatPlaystationParteBaixo a{
+    color: #00ffee;
+}
+
+li.categoriaPlatXbox.PRINC{
+    background: darkgreen;
+}
+
+li.categoriaPlatXbox.PRINC strong{
+    color: rgb(0, 235, 0);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.categoriaPlatXboxParteBaixo{
+    display: none;
+}
+
+.categoriaPlatXbox:hover .categoriaPlatXboxParteBaixo{
+    display: block;
+    background: darkgreen;
+}
+
+.categoriaPlatXboxParteBaixo{
+    position: relative;
+    justify-content: middle;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.categoriaPlatXboxParteBaixo a{
+    color: rgb(0, 235, 0);
+}
+
+li.categoriaPlatNintendo.PRINC{
+    background: #a50000;
+}
+
+li.categoriaPlatNintendo.PRINC strong{
+    color: #ff7575;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.categoriaPlatNintendoParteBaixo{
+    display: none;
+}
+
+.categoriaPlatNintendo:hover .categoriaPlatNintendoParteBaixo{
+    display: block;
+    background: #a50000;
+}
+
+.categoriaPlatNintendoParteBaixo{
+    position: relative;
+    justify-content: middle;
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.categoriaPlatNintendoParteBaixo a{
+    color: #ff7575;
+}
+
+.seleçãoplataformaeafins .listaitens > li {
+    text-align: center;
+    display: inline-block;
+    min-width: 8.98118%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px 5px;
+}
+
+.seleçãoplataformaeafins .listaitens > li {
+    display: inline-block;
+    text-align: center;
+}
+
+.seleçãoplataformaeafins .listaitens>li {
+    border-top-width: 0;
+}
+
+.seleçãoplataformaeafins li {
+    z-index: 20;
+}
+
+.seleçãoplataformaeafins li {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.PRINC {
+    border-color: rgb(0, 0, 0);
+}
+
+.PRINC {
+    border-color: #555;
+}
+
+.PRINC {
+    border-width: 2px 0 0;
+    border-style: solid;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+li {
+    line-height: 20px;
+}
+
+.seleçãoplataformaeafins a, .seleçãoplataformaeafins .titulo {
+    vertical-align: middle;
+}
+
+.seleçãoplataformaeafins a {
+    display: block;
+    white-space: nowrap;
+}
+
+a, a:hover, a:focus, .PRINC, .seleçãoplataformaeafins a:hover, a:hover span, a span {
+    color: rgb(0, 0, 0);
+}
+
+a, a:hover, a:focus, .PRINC, .seleçãoplataformaeafins a:hover,  a:hover span, a span {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #08c;
+    text-decoration: none;
+}
+
+/* CABEÇALHO CONTEUDO */
+
+.conteudocorpo #listagemProd .nomesessãoprincipalnovos{
+    text-align: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #ff0000;
+    background-color: rgb(255, 241, 159);
+}
+
+.produto {
+    border: 5px solid #ff0000;
+    border-radius: 8px;
+    background:#00ffee;
+    box-shadow: 8px 2px 5px rgb(26, 187, 193);
+}
+
+
+.precoproduto span{
+    font-family: 'Pixelify Sans', Arial, Helvetica, sans-serif;
+}
+
+.precoproduto .precopromo.titulo{
+    color: crimson;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.parcela strong{
+    color: rgb(174, 162, 98);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.descontopixvista strong{
+    color: rgb(174, 162, 98);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.listagem{
+    display: block;
+    justify-content: center;
+    margin-left: auto; /* Define a margem esquerda como automática para centralizar a imagem horizontalmente */
+    margin-right: auto; /* Define a margem direita como automática para centralizar a imagem horizontalmente */
+}
+
+#listagemProd ul  {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
+    overflow-x: auto;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    list-style-type: none; /* Remove os marcadores de lista */
+}
+
+#listagemProd li {
+    flex: 2 2 auto; /* Faz com que os itens da lista não cresçam nem encolham */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    width: 350px calc(25% - 40px); /* Define a largura de cada item (25% do contêiner) com espaço entre eles */
+    margin-left: 40px; /* Adiciona espaçamento entre os itens */
+    margin-right: 40px;
+}
+
+/* Adicione um seletor de hover personalizado para cada item se desejar */
+/* #listagemProd li:hover { */
+    /* Estilos de destaque ao passar o mouse, se necessário */
+/* } */
+
+.info-produto {
+    text-align: center;
+    top: 15px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.imagemproduto img {
+    max-width: 175px;
+    display: block;
+    margin-left: auto; /* Define a margem esquerda como automática para centralizar a imagem horizontalmente */
+    margin-right: auto; /* Define a margem direita como automática para centralizar a imagem horizontalmente */
+}
+
+.separação{
+    justify-content: center;
+}
+
+
+/* MAIN */
+
+footer{
+    background: seagreen;
+    padding: 0 0 15px;
+}
+
+ul .naveg{
+    position: relative;
+    display: inline-block;
+    border: 0 solid transparent;
+    border-radius: 3px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700!important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.3;
+    box-shadow: none;
+    background-color: rgb(0, 49, 0);
+    color: #fff;
+}
+
+.footer-navigation.grid ul{
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    border: 0 solid transparent;
+    border-radius: 3px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700!important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.3;
+    box-shadow: none;
+    background-color: rgb(0, 49, 0);
+    color: #fff;
+}
+
+.gridsocial .botaosocial{
+    position: relative;
+    display: inline-block;
+    border: 0 solid transparent;
+    border-radius: 3px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700!important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.3;
+    box-shadow: none;
+    background-color: rgb(0, 49, 0);
+    color: #fff;
+}
+
+.footer-navigation.grid a{
+    color: rgb(0, 59, 0);
+}
+
+.footertitulo{
+    color: rgb(0, 49, 0);
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footerredes ul{
+    margin-top: -10px;
+}
+
+.footerredes li{
+    display: inline-block;
+    padding-top: 10px;
+}
+
