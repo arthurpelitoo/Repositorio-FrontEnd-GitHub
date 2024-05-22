@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aaaaa</title>
+    <style>
+        .btnModal {
+          background-color: rgb(51, 49, 49);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.5s ease;
+        }
+    
+        .btnModal:hover {
+          animation: colorChange 500ms infinite alternate;
+        }
+    
+        @keyframes colorChange {
+          0% {
+            background-color: rgb(51, 49, 49);
+          }
+          100% {
+            background-color: rgb(100, 100, 100);
+          }
+        }
+      </style>
+</head>
+<body>
+    <button class="btnModal">Hover me!</button>
+</body>
+</html>
